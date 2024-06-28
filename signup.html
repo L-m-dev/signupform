@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean - Signup</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="left-area"><div class='logo-block'><img src='../assets/odin-lined.png' width="100" height="100"> OceanDSP</div></div>
+    <div class="right-area">
+    <div class='text-area'>
+        <section><p>This is not real... even though you try <i>not that hard</i>, it's tiring to keep going. I know you wanted to buy this product.</p></section>
+        <section><p>  C'mon you can do it</p></section>
+    </div>
+    
+    <div class="signup-form">
+<p>Let's do it mate!</p>
+        <form action="/send-form" method="post">
+         <p>
+            <label for="first-name">First Name </label>
+            <input type="text" id="first-name" name="first-name" required>
+        </p>    
+        <p>
+            <label for="last-name">Last Name </label>
+            <input type="text" id="last-name" name="last-name" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number">
+        </p>
+        <p>
+            <label for="password" >Password</label>
+            <input type="password"id="password" name="password">
+        </p>
+        <p>
+            <label for="confirm-password" >Confirm Password</label>
+            <input type="password"id="confirm-password" name="confirm-password">
+        </p>
+ 
+       
+    </div>
+
+    <section class="login-buttons">
+    <button type="submit">Create Account</button><br> </form>
+    <p>Already have an account? <span aria-label="login">Login!</span></p>
+    </section>  
+    </div>
+ 
+  </div> 
+    
+</body>
+</html>

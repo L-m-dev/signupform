@@ -1,0 +1,151 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+ 
+ body{
+    font-family: 'Merryweather', sans-serif;
+    width: 70%;
+    margin: auto    ;
+    background-color: rgb(44, 43, 43);
+ }
+ 
+.container{
+    height: 55rem;
+    display:flex;
+     background-color: rgb(93, 72, 112);
+     font-size:  1rem;
+     color: white;
+
+}
+.left-area{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+    background-image: url(../assets/ocean.avif);
+    background-size: cover;
+ 
+}
+.left-area .logo-block {
+    position: relative;
+    top:-10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-shadow: 0 1px pink;
+    flex-shrink: 1;
+         
+background-color: rgba(0, 0, 0, 0.5);
+}
+.right-area>:nth-child(1){
+    display: flex; 
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 1.3rem;
+     max-inline-size: 66ch;
+
+  }
+.right-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+ 
+}
+.signup-form form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 5rem;
+}
+.signup-form>:nth-child(1){
+    font-size: 1.2rem;
+}
+.signup-form{
+    display: flex;
+     width: 100%;
+     flex-wrap: wrap;
+     gap: 30px;
+     background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color:black;
+}
+
+.signup-form p{
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    
+}
+
+.right-area > :nth-child(n){
+    padding-left: 20px;
+
+}
+
+.login-buttons{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-buttons button{
+    width: 15em;
+    height: 3em;
+    background-color: rgb(71, 105, 56);
+    color: white;
+    font-weight: 800;
+    border-radius: 10px;
+border:none;
+
+}
+
+.login-buttons span{
+    color:rgb(241, 239, 116);
+    font-weight: 800;
+}
+.login-buttons button:hover{
+    background-color: rgb(89, 128, 30);
+}
+ 
+    .login-buttons button:active{
+        border:2px solid yellow;
+    }
+
+input{
+    border:1px solid #E5E7EB;
+}
+input:focus{
+    border:1px solid #4266ad;
+    box-shadow: 2px 2px 2px rgb(105, 105, 105);
+}
+input:user-invalid{
+    border:1px solid #ff0000;
+}
